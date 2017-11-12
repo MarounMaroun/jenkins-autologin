@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    font-size: 14px;
+    min-width: 170px;
+    background-color: #F1F1F1;
+    text-align: center;
+}
+
+#version {
+	font-size: 13px;
+	color : #5D6D7E;
+}
+
+.title {
+	color: grey;
+}

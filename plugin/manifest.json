@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Jenkins Autologin",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "jenkins-login.js",
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "jquery-3.1.1.js",
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_title": "Jenkins Auto Login",
+    "default_popup": "popup.html"
+  }
+}
